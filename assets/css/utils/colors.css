@@ -1,0 +1,14 @@
+:root {
+  color-scheme: light;
+  --color-navy: #10233f;
+  --color-blue: #1769aa;
+  --color-cyan: #55c4d8;
+  --color-renatec: #2784bd;
+  --color-reintec: #c84a42;
+  --color-feintec: #283d76;
+  --color-ink: #172638;
+  --color-muted: #657386;
+  --color-border: #dce4eb;
+  --color-surface: #fff;
+  --color-soft: #f3f7fa;
+}

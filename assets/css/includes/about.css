@@ -1,0 +1,55 @@
+#beneficios {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #f2f7fb, #fff 75%);
+}
+#beneficios > div > div:nth-child(2) {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+#beneficios > div > div:nth-child(2) > div {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+#beneficios > div > div:nth-child(2) > div:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-cyan);
+}
+#beneficios > div > div:nth-child(2) > div > div:first-child {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-blue), var(--color-cyan));
+  border-radius: 0.65rem;
+}
+#beneficios svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+#beneficios h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.15rem;
+}
+#beneficios p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+@media (min-width: 40rem) {
+  #beneficios > div > div:nth-child(2) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 64rem) {
+  #beneficios > div > div:nth-child(2) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

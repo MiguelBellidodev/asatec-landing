@@ -1,0 +1,9 @@
+@import "./utils/colors.css";
+@import "./utils/fonts.css";
+@import "./utils/base.css";
+@import "./includes/header.css";
+@import "./includes/hero.css";
+@import "./includes/catalog.css";
+@import "./includes/about.css";
+@import "./includes/contact.css";
+@import "./includes/footer.css";

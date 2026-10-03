@@ -1,0 +1,111 @@
+#contacto {
+  color: #fff;
+  background: var(--color-navy);
+}
+#contacto > div:first-child {
+  display: grid;
+  gap: 2.5rem;
+  width: min(100% - 2rem, 72rem);
+  margin: auto;
+  padding: 3.5rem 0;
+}
+#contacto > div:first-child > div:first-child > div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+#contacto > div:first-child > div:first-child img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid var(--color-cyan);
+  border-radius: 50%;
+  object-fit: cover;
+}
+#contacto > div:first-child p {
+  margin: 0;
+}
+#contacto > div:first-child > div:first-child p:first-child {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+#contacto > div:first-child > div:first-child p:last-child,
+#contacto > div:first-child > div:first-child > p {
+  color: rgb(255 255 255 / 62%);
+  font-size: 0.85rem;
+}
+#contacto > div:first-child > div > p:first-child {
+  color: var(--color-cyan);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#contacto ul {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: rgb(255 255 255 / 74%);
+  font-size: 0.9rem;
+}
+#contacto a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-cyan);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+#contacto a:hover {
+  color: #fff;
+}
+#contacto > div:first-child > div:last-child > div {
+  margin-top: 1.5rem;
+}
+#contacto > div:first-child > div:last-child > div p {
+  color: rgb(255 255 255 / 52%);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+#contacto > div:first-child > div:last-child > div img {
+  width: auto;
+  height: 3rem;
+  margin-top: 0.5rem;
+  padding: 0.35rem;
+  background: #fff;
+  border-radius: 0.4rem;
+}
+#contacto > div:last-child {
+  border-top: 1px solid rgb(255 255 255 / 12%);
+}
+#contacto > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: min(100% - 2rem, 72rem);
+  margin: auto;
+  padding: 1.25rem 0;
+  color: rgb(255 255 255 / 58%);
+  font-size: 0.75rem;
+  text-align: center;
+}
+#contacto > div:last-child p {
+  margin: 0;
+}
+@media (min-width: 48rem) {
+  #contacto > div:first-child {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  #contacto > div:last-child > div {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+}
